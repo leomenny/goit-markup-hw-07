@@ -22,7 +22,7 @@
     <header class="page-header">
       <div class="container page-header-container">
         <nav class="page-nav">
-          <a class="logo link" href="./index.html">
+          <a class="header-logo link" href="./index.html">
             <span class="header-logo-web">WEB</span>
             <span class="header-logo-studio">STUDIO</span>
           </a>
@@ -38,6 +38,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open-icon" width="32" height="22">
+            <use href="./img/icons.svg.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="contact list">
           <li class="contact-item">
             <a class="contact-mail link" href="mailto:info@devstudio.com"
@@ -50,6 +55,81 @@
             >
           </li>
         </ul>
+      </div>
+      <!-- header mobile menu -->
+      <div class="mobile-menu" data-menu>
+        <div class="mobile-menu-container">
+          <button class="mobile-menu-close-btn" data-menu-close>
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./img/icons.svg.svg#icon-modal-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list list">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="./index.html">Studio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link-contacts link" href="./contacts.html"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-menu-contact list">
+            <li class="mobile-menu-contact-phone-number-item">
+              <a
+                class="mobile-menu-contact-phone-number link"
+                href="tel:+110001111111"
+                >+110001111111</a
+              >
+            </li>
+            <li class="mobile-menu-contact-mail-item">
+              <a
+                class="mobile-menu-contact-mail link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <div class="mobile-menu-social">
+            <ul class="mobile-menu-social-list list">
+              <li class="mobile-menu-social-item">
+                <a href="" class="mobile-menu-social-link">
+                  <svg class="mobile-menu-social-icon" width="24" height="24">
+                    <use href="./img/icons.svg.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a href="" class="mobile-menu-social-link">
+                  <svg class="mobile-menu-social-icon" width="24" height="24">
+                    <use href="./img/icons.svg.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a href="" class="mobile-menu-social-link">
+                  <svg class="mobile-menu-social-icon" width="24" height="24">
+                    <use href="./img/icons.svg.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a href="" class="mobile-menu-social-link">
+                  <svg class="mobile-menu-social-icon" width="24" height="24">
+                    <use href="./img/icons.svg.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- main -->
@@ -123,7 +203,7 @@
       <section class="what-are-we-doing">
         <div class="container">
           <h2 class="what-are-we-doing-title">What are we doing</h2>
-          <ul class="list images">
+          <ul class="list what-are-we-doing-images">
             <li>
               <img
                 src="./img/services_section/img1.jpg"
@@ -155,12 +235,16 @@
       <section class="our-team-background">
         <div class="container team">
           <h2 class="our-team">Our Team</h2>
-          <ul class="list images">
+          <ul class="list our-team-images">
             <li class="foto-background card">
               <div class="card-team">
                 <img
                   src="./img/team/mark_guerrero.jpg"
                   alt="Mark Guerrero"
+                  srcset="
+                    ./img/team/mark_guerrero.jpg    1x,
+                    ./img/team/mark_guerrero_2x.jpg 2x
+                  "
                   width="264px"
                   height="260px"
                 />
@@ -205,6 +289,10 @@
                 <img
                   src="./img/team/tom_ford.jpg"
                   alt="Tom Ford"
+                  srcset="
+                    ./img/team/tom_ford.jpg    1x,
+                    ./img/team/tom_ford_2x.jpg 2x
+                  "
                   width="264px"
                   height="260px"
                 />
@@ -249,6 +337,10 @@
                 <img
                   src="./img/team/camila_garcia.jpg"
                   alt="Camila Garcia"
+                  srcset="
+                    ./img/team/camila_garcia.jpg    1x,
+                    ./img/team/camila_garcia_2x.jpg 2x
+                  "
                   width="264px"
                   height="260px"
                 />
@@ -293,6 +385,10 @@
                 <img
                   src="./img/team/daniel_wilson.jpg"
                   alt="Daniel Wilson"
+                  srcset="
+                    ./img/team/daniel_wilson.jpg    1x,
+                    ./img/team/daniel_wilson_2x.jpg 2x
+                  "
                   width="264px"
                   height="260px"
                 />
@@ -390,7 +486,7 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container footer-container">
-        <div>
+        <div class="footer-logo">
           <h2 hidden>Call to action</h2>
           <a class="logo link" href="index.html">
             <span class="footer-logo-web">WEB</span>
@@ -543,5 +639,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
