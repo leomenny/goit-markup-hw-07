@@ -1407,10 +1407,6 @@ body {
     margin-bottom: 72px;
   }
 
-  .logo {
-    margin-bottom: 16px;
-  }
-
   .footer-logo-web {
     color: var(--accent-color);
     font-family: var(--secondary-font);
@@ -1437,6 +1433,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
+    margin-top: 16px;
   }
 
   .social-media {
@@ -1576,10 +1573,6 @@ body {
     display: flex;
   }
 
-  .logo {
-    margin-bottom: 16px;
-  }
-
   .footer-logo-web {
     color: var(--accent-color);
     font-family: var(--secondary-font);
@@ -1606,6 +1599,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
+    margin-top: 16px;
   }
 
   .footer-social-media {
