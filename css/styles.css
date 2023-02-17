@@ -141,6 +141,7 @@ body {
     padding-top: 80px;
     padding-bottom: 40px;
     padding-left: 40px;
+    padding-right: 51px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
